@@ -1,0 +1,78 @@
+html {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+}
+
+.chart_wrapper {
+  background-color: #423D3D;
+  display: flex;
+  align-items: baseline;
+  margin: 0 10%; 
+  border: 2px solid #777777;
+  max-width: 1000px;
+}
+
+.impact_select {
+   height: 30px;
+   padding: 5px;
+   width: 200px;
+   outline: none;
+   margin-left: calc(50% - 100px);
+   margin-bottom: 30px;
+}
+
+.bar {
+  margin: 10% 0 125px 10%;
+  max-width: 54px;
+}
+
+.bar svg {
+  border: 2px solid #777777;
+  width: 100%;
+  max-width: 50px;
+  transition: all .3s ease-out;
+}
+
+rect, path, g {
+  transition: all .6s ease-out;
+}
+
+.bar_inital {
+  position: relative;
+  bottom: -50px;
+  left: 14px;
+}
+
+.bar_inital, .chart_title {
+  fill: #FFFFFF;
+  font-size: min(30px, 4vw); 
+  font-weight: 300;
+  text-align: center;
+}
+
+.chart_wrapper .bar:last-child {
+  margin-right: 10%;
+}
+
+.production {
+  fill: #FF0000;
+}
+
+.distribution {
+  fill: #FF9A00;
+}
+
+.use {
+  fill: #FFFFFF;
+}
+
+.end_of_life {
+  fill: #00FBFF;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .chart_wrapper {
+    margin: 0 auto 10% auto;
+  }
+}
